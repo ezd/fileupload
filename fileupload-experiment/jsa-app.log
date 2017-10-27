@@ -1,0 +1,425 @@
+2017-10-27 13:08:01.315  INFO 6632 --- [main] c.e.d.FileuploadExperimentApplication    : Starting FileuploadExperimentApplication on USTX10300L01287 with PID 6632 (started by ew11300 in C:\Program Files (x86)\STS\STS3.7.3-Eclipse4.5.2-RTC6.0.2-WLP8.5-SecureAssist\STS3.7.3-Eclipse4.5.2-RTC6.0.2-WLP8.5-SecureAssist\advanced-spring\fileupload-experiment)
+2017-10-27 13:08:01.323  INFO 6632 --- [main] c.e.d.FileuploadExperimentApplication    : No active profile set, falling back to default profiles: default
+2017-10-27 13:08:01.752  INFO 6632 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@69b2283a: startup date [Fri Oct 27 13:08:01 CDT 2017]; root of context hierarchy
+2017-10-27 13:08:03.228  INFO 6632 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-10-27 13:08:03.245  INFO 6632 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-10-27 13:08:03.246  INFO 6632 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2017-10-27 13:08:03.603  INFO 6632 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-10-27 13:08:03.603  INFO 6632 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1854 ms
+2017-10-27 13:08:03.777  INFO 6632 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-10-27 13:08:03.781  INFO 6632 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-10-27 13:08:03.782  INFO 6632 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-10-27 13:08:03.783  INFO 6632 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-10-27 13:08:03.783  INFO 6632 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-10-27 13:08:03.826  WARN 6632 --- [main] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'fileuploadExperimentApplication': Unsatisfied dependency expressed through field 's3Services'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.example.demo.S3Services' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2017-10-27 13:08:03.828  INFO 6632 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2017-10-27 13:08:03.886  INFO 6632 --- [main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2017-10-27 13:08:04.015 ERROR 6632 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field s3Services in com.example.demo.FileuploadExperimentApplication required a bean of type 'com.example.demo.S3Services' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.example.demo.S3Services' in your configuration.
+
+2017-10-27 13:08:47.164  INFO 2612 --- [main] c.e.d.FileuploadExperimentApplication    : Starting FileuploadExperimentApplication on USTX10300L01287 with PID 2612 (started by ew11300 in C:\Program Files (x86)\STS\STS3.7.3-Eclipse4.5.2-RTC6.0.2-WLP8.5-SecureAssist\STS3.7.3-Eclipse4.5.2-RTC6.0.2-WLP8.5-SecureAssist\advanced-spring\fileupload-experiment)
+2017-10-27 13:08:47.168  INFO 2612 --- [main] c.e.d.FileuploadExperimentApplication    : No active profile set, falling back to default profiles: default
+2017-10-27 13:08:47.545  INFO 2612 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@69b2283a: startup date [Fri Oct 27 13:08:47 CDT 2017]; root of context hierarchy
+2017-10-27 13:08:49.204  INFO 2612 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-10-27 13:08:49.219  INFO 2612 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-10-27 13:08:49.221  INFO 2612 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2017-10-27 13:08:49.499  INFO 2612 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-10-27 13:08:49.500  INFO 2612 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1959 ms
+2017-10-27 13:08:49.695  INFO 2612 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-10-27 13:08:49.700  INFO 2612 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-10-27 13:08:49.701  INFO 2612 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-10-27 13:08:49.701  INFO 2612 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-10-27 13:08:49.702  INFO 2612 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-10-27 13:09:31.928 ERROR 2612 --- [main] com.example.demo.S3Config                : Unable to upload file, upload was aborted, reason: Unable to execute HTTP request: Connect to ezedin-devopsbuddy.s3-us-west-1.amazonaws.com:443 [ezedin-devopsbuddy.s3-us-west-1.amazonaws.com/52.219.24.8] failed: connect timed out
+2017-10-27 13:09:32.366  INFO 2612 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@69b2283a: startup date [Fri Oct 27 13:08:47 CDT 2017]; root of context hierarchy
+2017-10-27 13:09:32.459  INFO 2612 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/submit]}" onto public java.lang.String com.example.demo.IndexController.getSubmit(com.example.demo.User,org.springframework.web.multipart.MultipartFile,org.springframework.ui.Model)
+2017-10-27 13:09:32.461  INFO 2612 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.example.demo.IndexController.getindex(com.example.demo.User)
+2017-10-27 13:09:32.464  INFO 2612 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-10-27 13:09:32.465  INFO 2612 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-10-27 13:09:32.512  INFO 2612 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-27 13:09:32.512  INFO 2612 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-27 13:09:32.572  INFO 2612 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-27 13:09:33.266  INFO 2612 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-10-27 13:09:33.373  INFO 2612 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-10-27 13:09:33.668  INFO 2612 --- [java-sdk-progress-listener-callback-thread] com.example.demo.S3ServicesImpl          : Uploaded bytes:0
+2017-10-27 13:09:33.668  INFO 2612 --- [java-sdk-progress-listener-callback-thread] com.example.demo.S3ServicesImpl          : Uploaded bytes:0
+2017-10-27 13:09:33.671  INFO 2612 --- [java-sdk-progress-listener-callback-thread] com.example.demo.S3ServicesImpl          : Uploaded bytes:0
+2017-10-27 13:09:33.675  INFO 2612 --- [java-sdk-progress-listener-callback-thread] com.example.demo.S3ServicesImpl          : Uploaded bytes:0
+2017-10-27 13:09:43.677  INFO 2612 --- [java-sdk-progress-listener-callback-thread] com.example.demo.S3ServicesImpl          : Uploaded bytes:0
+2017-10-27 13:09:43.737  INFO 2612 --- [java-sdk-progress-listener-callback-thread] com.example.demo.S3ServicesImpl          : Uploaded bytes:0
+2017-10-27 13:09:53.738  INFO 2612 --- [java-sdk-progress-listener-callback-thread] com.example.demo.S3ServicesImpl          : Uploaded bytes:0
+2017-10-27 13:09:53.936  INFO 2612 --- [java-sdk-progress-listener-callback-thread] com.example.demo.S3ServicesImpl          : Uploaded bytes:0
+2017-10-27 13:10:04.061  INFO 2612 --- [java-sdk-progress-listener-callback-thread] com.example.demo.S3ServicesImpl          : Uploaded bytes:0
+2017-10-27 13:10:04.297  INFO 2612 --- [java-sdk-progress-listener-callback-thread] com.example.demo.S3ServicesImpl          : Uploaded bytes:0
+2017-10-27 13:10:14.298  INFO 2612 --- [java-sdk-progress-listener-callback-thread] com.example.demo.S3ServicesImpl          : Uploaded bytes:0
+2017-10-27 13:10:14.299  INFO 2612 --- [java-sdk-progress-listener-callback-thread] com.example.demo.S3ServicesImpl          : Uploaded bytes:0
+2017-10-27 13:10:14.303  WARN 2612 --- [main] com.example.demo.S3ServicesImpl          : Amazon Client Ex:Unable to execute HTTP request: Connect to ezedin-devopsbuddy.s3-us-west-1.amazonaws.com:443 [ezedin-devopsbuddy.s3-us-west-1.amazonaws.com/52.219.28.32] failed: connect timed out
+2017-10-27 13:10:14.317  INFO 2612 --- [main] c.e.d.FileuploadExperimentApplication    : Started FileuploadExperimentApplication in 87.485 seconds (JVM running for 88.399)
+2017-10-27 13:13:01.582  INFO 2612 --- [RMI TCP Connection(11)-192.168.56.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2017-10-27 13:13:01.583  INFO 2612 --- [RMI TCP Connection(11)-192.168.56.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@69b2283a: startup date [Fri Oct 27 13:08:47 CDT 2017]; root of context hierarchy
+2017-10-27 13:13:01.585  INFO 2612 --- [RMI TCP Connection(11)-192.168.56.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2017-10-27 13:13:20.153  INFO 8892 --- [main] c.e.d.FileuploadExperimentApplication    : Starting FileuploadExperimentApplication on USTX10300L01287 with PID 8892 (started by ew11300 in C:\Program Files (x86)\STS\STS3.7.3-Eclipse4.5.2-RTC6.0.2-WLP8.5-SecureAssist\STS3.7.3-Eclipse4.5.2-RTC6.0.2-WLP8.5-SecureAssist\advanced-spring\fileupload-experiment)
+2017-10-27 13:13:20.159 DEBUG 8892 --- [main] c.e.d.FileuploadExperimentApplication    : Running with Spring Boot v1.5.8.RELEASE, Spring v4.3.12.RELEASE
+2017-10-27 13:13:20.160  INFO 8892 --- [main] c.e.d.FileuploadExperimentApplication    : No active profile set, falling back to default profiles: default
+2017-10-27 13:13:20.679  INFO 8892 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6fe7aac8: startup date [Fri Oct 27 13:13:20 CDT 2017]; root of context hierarchy
+2017-10-27 13:13:22.303  INFO 8892 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-10-27 13:13:22.320  INFO 8892 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-10-27 13:13:22.321  INFO 8892 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2017-10-27 13:13:22.604  INFO 8892 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-10-27 13:13:22.604  INFO 8892 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1930 ms
+2017-10-27 13:13:22.803  INFO 8892 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-10-27 13:13:22.808  INFO 8892 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-10-27 13:13:22.809  INFO 8892 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-10-27 13:13:22.809  INFO 8892 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-10-27 13:13:22.810  INFO 8892 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-10-27 13:14:04.377 ERROR 8892 --- [main] com.example.demo.S3Config                : Unable to upload file, upload was aborted, reason: Unable to execute HTTP request: Connect to ezedin-devopsbuddy.s3-us-west-1.amazonaws.com:443 [ezedin-devopsbuddy.s3-us-west-1.amazonaws.com/52.219.24.0] failed: connect timed out
+2017-10-27 13:14:04.737  INFO 8892 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6fe7aac8: startup date [Fri Oct 27 13:13:20 CDT 2017]; root of context hierarchy
+2017-10-27 13:14:04.819  INFO 8892 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/submit]}" onto public java.lang.String com.example.demo.IndexController.getSubmit(com.example.demo.User,org.springframework.web.multipart.MultipartFile,org.springframework.ui.Model)
+2017-10-27 13:14:04.820  INFO 8892 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.example.demo.IndexController.getindex(com.example.demo.User)
+2017-10-27 13:14:04.824  INFO 8892 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-10-27 13:14:04.824  INFO 8892 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-10-27 13:14:04.869  INFO 8892 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-27 13:14:04.870  INFO 8892 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-27 13:14:04.929  INFO 8892 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-27 13:14:05.608  INFO 8892 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-10-27 13:14:05.730  INFO 8892 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-10-27 13:14:05.798  INFO 8892 --- [java-sdk-progress-listener-callback-thread] com.example.demo.S3ServicesImpl          : Uploaded bytes:0
+2017-10-27 13:14:05.799  INFO 8892 --- [java-sdk-progress-listener-callback-thread] com.example.demo.S3ServicesImpl          : Uploaded bytes:0
+2017-10-27 13:14:05.799  INFO 8892 --- [java-sdk-progress-listener-callback-thread] com.example.demo.S3ServicesImpl          : Uploaded bytes:0
+2017-10-27 13:14:05.799  INFO 8892 --- [java-sdk-progress-listener-callback-thread] com.example.demo.S3ServicesImpl          : Uploaded bytes:0
+2017-10-27 13:14:15.799  INFO 8892 --- [java-sdk-progress-listener-callback-thread] com.example.demo.S3ServicesImpl          : Uploaded bytes:0
+2017-10-27 13:14:15.850  INFO 8892 --- [java-sdk-progress-listener-callback-thread] com.example.demo.S3ServicesImpl          : Uploaded bytes:0
+2017-10-27 13:14:25.849  INFO 8892 --- [java-sdk-progress-listener-callback-thread] com.example.demo.S3ServicesImpl          : Uploaded bytes:0
+2017-10-27 13:14:25.985  INFO 8892 --- [java-sdk-progress-listener-callback-thread] com.example.demo.S3ServicesImpl          : Uploaded bytes:0
+2017-10-27 13:14:36.073  INFO 8892 --- [java-sdk-progress-listener-callback-thread] com.example.demo.S3ServicesImpl          : Uploaded bytes:0
+2017-10-27 13:14:36.283  INFO 8892 --- [java-sdk-progress-listener-callback-thread] com.example.demo.S3ServicesImpl          : Uploaded bytes:0
+2017-10-27 13:14:46.284  INFO 8892 --- [java-sdk-progress-listener-callback-thread] com.example.demo.S3ServicesImpl          : Uploaded bytes:0
+2017-10-27 13:14:46.287  INFO 8892 --- [java-sdk-progress-listener-callback-thread] com.example.demo.S3ServicesImpl          : Uploaded bytes:0
+2017-10-27 13:14:46.301  WARN 8892 --- [main] com.example.demo.S3ServicesImpl          : Amazon Client Ex:Unable to execute HTTP request: Connect to ezedin-devopsbuddy.s3-us-west-1.amazonaws.com:443 [ezedin-devopsbuddy.s3-us-west-1.amazonaws.com/54.231.237.36] failed: connect timed out
+2017-10-27 13:14:46.307  INFO 8892 --- [main] c.e.d.FileuploadExperimentApplication    : Started FileuploadExperimentApplication in 86.625 seconds (JVM running for 87.919)
+2017-10-27 13:19:50.447  INFO 8892 --- [RMI TCP Connection(15)-192.168.56.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2017-10-27 13:19:50.447  INFO 8892 --- [RMI TCP Connection(15)-192.168.56.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6fe7aac8: startup date [Fri Oct 27 13:13:20 CDT 2017]; root of context hierarchy
+2017-10-27 13:19:50.449  INFO 8892 --- [RMI TCP Connection(15)-192.168.56.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2017-10-27 13:20:17.034  INFO 5984 --- [main] c.e.d.FileuploadExperimentApplication    : Starting FileuploadExperimentApplication on USTX10300L01287 with PID 5984 (started by ew11300 in C:\Program Files (x86)\STS\STS3.7.3-Eclipse4.5.2-RTC6.0.2-WLP8.5-SecureAssist\STS3.7.3-Eclipse4.5.2-RTC6.0.2-WLP8.5-SecureAssist\advanced-spring\fileupload-experiment)
+2017-10-27 13:20:17.039 DEBUG 5984 --- [main] c.e.d.FileuploadExperimentApplication    : Running with Spring Boot v1.5.8.RELEASE, Spring v4.3.12.RELEASE
+2017-10-27 13:20:17.039  INFO 5984 --- [main] c.e.d.FileuploadExperimentApplication    : No active profile set, falling back to default profiles: default
+2017-10-27 13:20:17.577  INFO 5984 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7f284218: startup date [Fri Oct 27 13:20:17 CDT 2017]; root of context hierarchy
+2017-10-27 13:20:22.958  INFO 5984 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-10-27 13:20:22.978  INFO 5984 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-10-27 13:20:22.980  INFO 5984 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2017-10-27 13:20:23.254  INFO 5984 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-10-27 13:20:23.255  INFO 5984 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5682 ms
+2017-10-27 13:20:23.502  INFO 5984 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-10-27 13:20:23.508  INFO 5984 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-10-27 13:20:23.509  INFO 5984 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-10-27 13:20:23.510  INFO 5984 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-10-27 13:20:23.510  INFO 5984 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-10-27 13:21:05.117 ERROR 5984 --- [main] com.example.demo.S3Config                : Unable to upload file, upload was aborted, reason: Unable to execute HTTP request: Connect to ezedin-devopsbuddy.s3-us-west-1.amazonaws.com:443 [ezedin-devopsbuddy.s3-us-west-1.amazonaws.com/52.219.28.104] failed: connect timed out
+2017-10-27 13:21:05.600  INFO 5984 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7f284218: startup date [Fri Oct 27 13:20:17 CDT 2017]; root of context hierarchy
+2017-10-27 13:21:05.724  INFO 5984 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/submit]}" onto public java.lang.String com.example.demo.IndexController.getSubmit(com.example.demo.User,org.springframework.web.multipart.MultipartFile,org.springframework.ui.Model)
+2017-10-27 13:21:05.726  INFO 5984 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.example.demo.IndexController.getindex(com.example.demo.User)
+2017-10-27 13:21:05.731  INFO 5984 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-10-27 13:21:05.732  INFO 5984 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-10-27 13:21:05.808  INFO 5984 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-27 13:21:05.808  INFO 5984 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-27 13:21:05.892  INFO 5984 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-27 13:21:06.835  INFO 5984 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-10-27 13:21:06.976  INFO 5984 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-10-27 13:24:14.808  INFO 5984 --- [java-sdk-progress-listener-callback-thread] com.example.demo.S3ServicesImpl          : Uploaded bytes:0
+2017-10-27 13:24:14.809  INFO 5984 --- [java-sdk-progress-listener-callback-thread] com.example.demo.S3ServicesImpl          : Uploaded bytes:0
+2017-10-27 13:24:14.810  INFO 5984 --- [java-sdk-progress-listener-callback-thread] com.example.demo.S3ServicesImpl          : Uploaded bytes:0
+2017-10-27 13:24:14.816  INFO 5984 --- [java-sdk-progress-listener-callback-thread] com.example.demo.S3ServicesImpl          : Uploaded bytes:0
+2017-10-27 13:24:24.947  INFO 5984 --- [java-sdk-progress-listener-callback-thread] com.example.demo.S3ServicesImpl          : Uploaded bytes:0
+2017-10-27 13:24:24.992  INFO 5984 --- [java-sdk-progress-listener-callback-thread] com.example.demo.S3ServicesImpl          : Uploaded bytes:0
+2017-10-27 13:24:34.994  INFO 5984 --- [java-sdk-progress-listener-callback-thread] com.example.demo.S3ServicesImpl          : Uploaded bytes:0
+2017-10-27 13:24:35.091  INFO 5984 --- [java-sdk-progress-listener-callback-thread] com.example.demo.S3ServicesImpl          : Uploaded bytes:0
+2017-10-27 13:24:45.092  INFO 5984 --- [java-sdk-progress-listener-callback-thread] com.example.demo.S3ServicesImpl          : Uploaded bytes:0
+2017-10-27 13:24:45.379  INFO 5984 --- [java-sdk-progress-listener-callback-thread] com.example.demo.S3ServicesImpl          : Uploaded bytes:0
+2017-10-27 13:24:55.458  INFO 5984 --- [java-sdk-progress-listener-callback-thread] com.example.demo.S3ServicesImpl          : Uploaded bytes:0
+2017-10-27 13:24:55.462  INFO 5984 --- [java-sdk-progress-listener-callback-thread] com.example.demo.S3ServicesImpl          : Uploaded bytes:0
+2017-10-27 13:29:52.494  INFO 1328 --- [main] c.e.d.FileuploadExperimentApplication    : Starting FileuploadExperimentApplication on USTX10300L01287 with PID 1328 (started by ew11300 in C:\Program Files (x86)\STS\STS3.7.3-Eclipse4.5.2-RTC6.0.2-WLP8.5-SecureAssist\STS3.7.3-Eclipse4.5.2-RTC6.0.2-WLP8.5-SecureAssist\advanced-spring\fileupload-experiment)
+2017-10-27 13:29:52.497 DEBUG 1328 --- [main] c.e.d.FileuploadExperimentApplication    : Running with Spring Boot v1.5.8.RELEASE, Spring v4.3.12.RELEASE
+2017-10-27 13:29:52.497  INFO 1328 --- [main] c.e.d.FileuploadExperimentApplication    : No active profile set, falling back to default profiles: default
+2017-10-27 13:29:52.759  INFO 1328 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6fe7aac8: startup date [Fri Oct 27 13:29:52 CDT 2017]; root of context hierarchy
+2017-10-27 13:29:54.300  INFO 1328 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-10-27 13:29:54.321  INFO 1328 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-10-27 13:29:54.323  INFO 1328 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2017-10-27 13:29:54.614  INFO 1328 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-10-27 13:29:54.614  INFO 1328 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1858 ms
+2017-10-27 13:29:54.827  INFO 1328 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-10-27 13:29:54.833  INFO 1328 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-10-27 13:29:54.834  INFO 1328 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-10-27 13:29:54.834  INFO 1328 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-10-27 13:29:54.835  INFO 1328 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-10-27 13:30:36.284 ERROR 1328 --- [main] com.example.demo.S3Config                : Unable to upload file, upload was aborted, reason: Unable to execute HTTP request: Connect to ezedin-devopsbuddy.s3-us-west-1.amazonaws.com:443 [ezedin-devopsbuddy.s3-us-west-1.amazonaws.com/52.219.24.24] failed: connect timed out
+2017-10-27 13:30:36.672  INFO 1328 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6fe7aac8: startup date [Fri Oct 27 13:29:52 CDT 2017]; root of context hierarchy
+2017-10-27 13:30:36.758  INFO 1328 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.example.demo.IndexController.getindex(com.example.demo.User)
+2017-10-27 13:30:36.760  INFO 1328 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/submit]}" onto public java.lang.String com.example.demo.IndexController.getSubmit(com.example.demo.User,org.springframework.web.multipart.MultipartFile,org.springframework.ui.Model)
+2017-10-27 13:30:36.764  INFO 1328 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-10-27 13:30:36.764  INFO 1328 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-10-27 13:30:36.809  INFO 1328 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-27 13:30:36.809  INFO 1328 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-27 13:30:36.865  INFO 1328 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-27 13:30:37.429  INFO 1328 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-10-27 13:30:37.536  INFO 1328 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-10-27 13:30:37.595  INFO 1328 --- [java-sdk-progress-listener-callback-thread] com.example.demo.S3ServicesImpl          : Uploaded bytes:0
+2017-10-27 13:30:37.596  INFO 1328 --- [java-sdk-progress-listener-callback-thread] com.example.demo.S3ServicesImpl          : Uploaded bytes:0
+2017-10-27 13:30:37.596  INFO 1328 --- [java-sdk-progress-listener-callback-thread] com.example.demo.S3ServicesImpl          : Uploaded bytes:0
+2017-10-27 13:30:37.599  INFO 1328 --- [java-sdk-progress-listener-callback-thread] com.example.demo.S3ServicesImpl          : Uploaded bytes:0
+2017-10-27 13:30:47.601  INFO 1328 --- [java-sdk-progress-listener-callback-thread] com.example.demo.S3ServicesImpl          : Uploaded bytes:0
+2017-10-27 13:30:47.639  INFO 1328 --- [java-sdk-progress-listener-callback-thread] com.example.demo.S3ServicesImpl          : Uploaded bytes:0
+2017-10-27 13:30:57.638  INFO 1328 --- [java-sdk-progress-listener-callback-thread] com.example.demo.S3ServicesImpl          : Uploaded bytes:0
+2017-10-27 13:30:57.689  INFO 1328 --- [java-sdk-progress-listener-callback-thread] com.example.demo.S3ServicesImpl          : Uploaded bytes:0
+2017-10-27 13:31:07.865  INFO 1328 --- [java-sdk-progress-listener-callback-thread] com.example.demo.S3ServicesImpl          : Uploaded bytes:0
+2017-10-27 13:31:07.908  INFO 1328 --- [java-sdk-progress-listener-callback-thread] com.example.demo.S3ServicesImpl          : Uploaded bytes:0
+2017-10-27 13:31:17.909  INFO 1328 --- [java-sdk-progress-listener-callback-thread] com.example.demo.S3ServicesImpl          : Uploaded bytes:0
+2017-10-27 13:31:17.914  INFO 1328 --- [java-sdk-progress-listener-callback-thread] com.example.demo.S3ServicesImpl          : Uploaded bytes:0
+2017-10-27 13:31:17.924  WARN 1328 --- [main] com.example.demo.S3ServicesImpl          : Amazon Client Ex:Unable to execute HTTP request: Connect to ezedin-devopsbuddy.s3-us-west-1.amazonaws.com:443 [ezedin-devopsbuddy.s3-us-west-1.amazonaws.com/52.219.28.80] failed: connect timed out
+2017-10-27 13:31:17.927  WARN 1328 --- [main] com.example.demo.S3ServicesImpl          : Amazon Client Ex:[Ljava.lang.StackTraceElement;@4f0cab0a
+2017-10-27 13:31:17.931  INFO 1328 --- [main] c.e.d.FileuploadExperimentApplication    : Started FileuploadExperimentApplication in 85.715 seconds (JVM running for 87.742)
+2017-10-27 13:31:56.381  INFO 1328 --- [RMI TCP Connection(9)-192.168.56.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2017-10-27 13:31:56.382  INFO 1328 --- [RMI TCP Connection(9)-192.168.56.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6fe7aac8: startup date [Fri Oct 27 13:29:52 CDT 2017]; root of context hierarchy
+2017-10-27 13:31:56.385  INFO 1328 --- [RMI TCP Connection(9)-192.168.56.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2017-10-27 13:32:14.480  INFO 8660 --- [main] c.e.d.FileuploadExperimentApplication    : Starting FileuploadExperimentApplication on USTX10300L01287 with PID 8660 (started by ew11300 in C:\Program Files (x86)\STS\STS3.7.3-Eclipse4.5.2-RTC6.0.2-WLP8.5-SecureAssist\STS3.7.3-Eclipse4.5.2-RTC6.0.2-WLP8.5-SecureAssist\advanced-spring\fileupload-experiment)
+2017-10-27 13:32:14.493 DEBUG 8660 --- [main] c.e.d.FileuploadExperimentApplication    : Running with Spring Boot v1.5.8.RELEASE, Spring v4.3.12.RELEASE
+2017-10-27 13:32:14.493  INFO 8660 --- [main] c.e.d.FileuploadExperimentApplication    : No active profile set, falling back to default profiles: default
+2017-10-27 13:32:14.877  INFO 8660 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6fe7aac8: startup date [Fri Oct 27 13:32:14 CDT 2017]; root of context hierarchy
+2017-10-27 13:32:16.260  INFO 8660 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-10-27 13:32:16.274  INFO 8660 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-10-27 13:32:16.275  INFO 8660 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2017-10-27 13:32:16.550  INFO 8660 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-10-27 13:32:16.551  INFO 8660 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1678 ms
+2017-10-27 13:32:16.735  INFO 8660 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-10-27 13:32:16.740  INFO 8660 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-10-27 13:32:16.741  INFO 8660 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-10-27 13:32:16.741  INFO 8660 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-10-27 13:32:16.742  INFO 8660 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-10-27 13:32:58.701 ERROR 8660 --- [main] com.example.demo.S3Config                : Unable to upload file, upload was aborted, reason: Unable to execute HTTP request: Connect to ezedin-devopsbuddy.s3-us-west-1.amazonaws.com:443 [ezedin-devopsbuddy.s3-us-west-1.amazonaws.com/54.231.236.32] failed: connect timed out
+2017-10-27 13:32:59.085  INFO 8660 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6fe7aac8: startup date [Fri Oct 27 13:32:14 CDT 2017]; root of context hierarchy
+2017-10-27 13:32:59.162  INFO 8660 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.example.demo.IndexController.getindex(com.example.demo.User)
+2017-10-27 13:32:59.163  INFO 8660 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/submit]}" onto public java.lang.String com.example.demo.IndexController.getSubmit(com.example.demo.User,org.springframework.web.multipart.MultipartFile,org.springframework.ui.Model)
+2017-10-27 13:32:59.167  INFO 8660 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-10-27 13:32:59.168  INFO 8660 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-10-27 13:32:59.212  INFO 8660 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-27 13:32:59.212  INFO 8660 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-27 13:32:59.257  INFO 8660 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-27 13:32:59.816  INFO 8660 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-10-27 13:32:59.907  INFO 8660 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-10-27 13:32:59.949  INFO 8660 --- [java-sdk-progress-listener-callback-thread] com.example.demo.S3ServicesImpl          : Uploaded bytes:0
+2017-10-27 13:32:59.949  INFO 8660 --- [java-sdk-progress-listener-callback-thread] com.example.demo.S3ServicesImpl          : Uploaded bytes:0
+2017-10-27 13:32:59.951  INFO 8660 --- [java-sdk-progress-listener-callback-thread] com.example.demo.S3ServicesImpl          : Uploaded bytes:0
+2017-10-27 13:32:59.954  INFO 8660 --- [java-sdk-progress-listener-callback-thread] com.example.demo.S3ServicesImpl          : Uploaded bytes:0
+2017-10-27 13:33:09.958  INFO 8660 --- [java-sdk-progress-listener-callback-thread] com.example.demo.S3ServicesImpl          : Uploaded bytes:0
+2017-10-27 13:33:10.020  INFO 8660 --- [java-sdk-progress-listener-callback-thread] com.example.demo.S3ServicesImpl          : Uploaded bytes:0
+2017-10-27 13:33:20.020  INFO 8660 --- [java-sdk-progress-listener-callback-thread] com.example.demo.S3ServicesImpl          : Uploaded bytes:0
+2017-10-27 13:33:20.125  INFO 8660 --- [java-sdk-progress-listener-callback-thread] com.example.demo.S3ServicesImpl          : Uploaded bytes:0
+2017-10-27 13:33:30.275  INFO 8660 --- [java-sdk-progress-listener-callback-thread] com.example.demo.S3ServicesImpl          : Uploaded bytes:0
+2017-10-27 13:33:30.381  INFO 8660 --- [java-sdk-progress-listener-callback-thread] com.example.demo.S3ServicesImpl          : Uploaded bytes:0
+2017-10-27 13:33:40.383  INFO 8660 --- [java-sdk-progress-listener-callback-thread] com.example.demo.S3ServicesImpl          : Uploaded bytes:0
+2017-10-27 13:33:40.387  INFO 8660 --- [java-sdk-progress-listener-callback-thread] com.example.demo.S3ServicesImpl          : Uploaded bytes:0
+2017-10-27 13:33:40.398  WARN 8660 --- [main] com.example.demo.S3ServicesImpl          : Amazon Client Ex:Unable to execute HTTP request: Connect to ezedin-devopsbuddy.s3-us-west-1.amazonaws.com:443 [ezedin-devopsbuddy.s3-us-west-1.amazonaws.com/52.219.28.24] failed: connect timed out
+2017-10-27 13:33:40.400  WARN 8660 --- [main] com.example.demo.S3ServicesImpl          : Amazon Client Ex:[Ljava.lang.StackTraceElement;@fe7b6b0
+2017-10-27 13:33:40.410  INFO 8660 --- [main] c.e.d.FileuploadExperimentApplication    : Started FileuploadExperimentApplication in 86.259 seconds (JVM running for 87.203)
+2017-10-27 13:35:44.677  INFO 8660 --- [RMI TCP Connection(13)-192.168.56.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2017-10-27 13:35:44.678  INFO 8660 --- [RMI TCP Connection(13)-192.168.56.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6fe7aac8: startup date [Fri Oct 27 13:32:14 CDT 2017]; root of context hierarchy
+2017-10-27 13:35:44.681  INFO 8660 --- [RMI TCP Connection(13)-192.168.56.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2017-10-27 13:36:02.744  INFO 1472 --- [main] c.e.d.FileuploadExperimentApplication    : Starting FileuploadExperimentApplication on USTX10300L01287 with PID 1472 (started by ew11300 in C:\Program Files (x86)\STS\STS3.7.3-Eclipse4.5.2-RTC6.0.2-WLP8.5-SecureAssist\STS3.7.3-Eclipse4.5.2-RTC6.0.2-WLP8.5-SecureAssist\advanced-spring\fileupload-experiment)
+2017-10-27 13:36:02.756 DEBUG 1472 --- [main] c.e.d.FileuploadExperimentApplication    : Running with Spring Boot v1.5.8.RELEASE, Spring v4.3.12.RELEASE
+2017-10-27 13:36:02.756  INFO 1472 --- [main] c.e.d.FileuploadExperimentApplication    : No active profile set, falling back to default profiles: default
+2017-10-27 13:36:03.126  INFO 1472 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6fe7aac8: startup date [Fri Oct 27 13:36:03 CDT 2017]; root of context hierarchy
+2017-10-27 13:36:04.522  INFO 1472 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-10-27 13:36:04.539  INFO 1472 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-10-27 13:36:04.541  INFO 1472 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2017-10-27 13:36:04.858  INFO 1472 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-10-27 13:36:04.859  INFO 1472 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1735 ms
+2017-10-27 13:36:05.059  INFO 1472 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-10-27 13:36:05.064  INFO 1472 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-10-27 13:36:05.065  INFO 1472 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-10-27 13:36:05.065  INFO 1472 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-10-27 13:36:05.066  INFO 1472 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-10-27 13:36:48.894  INFO 2732 --- [main] c.e.d.FileuploadExperimentApplication    : Starting FileuploadExperimentApplication on USTX10300L01287 with PID 2732 (started by ew11300 in C:\Program Files (x86)\STS\STS3.7.3-Eclipse4.5.2-RTC6.0.2-WLP8.5-SecureAssist\STS3.7.3-Eclipse4.5.2-RTC6.0.2-WLP8.5-SecureAssist\advanced-spring\fileupload-experiment)
+2017-10-27 13:36:48.898 DEBUG 2732 --- [main] c.e.d.FileuploadExperimentApplication    : Running with Spring Boot v1.5.8.RELEASE, Spring v4.3.12.RELEASE
+2017-10-27 13:36:48.898  INFO 2732 --- [main] c.e.d.FileuploadExperimentApplication    : No active profile set, falling back to default profiles: default
+2017-10-27 13:36:49.183  INFO 2732 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6fe7aac8: startup date [Fri Oct 27 13:36:49 CDT 2017]; root of context hierarchy
+2017-10-27 13:36:50.808  INFO 2732 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-10-27 13:36:50.821  INFO 2732 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-10-27 13:36:50.822  INFO 2732 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2017-10-27 13:36:51.113  INFO 2732 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-10-27 13:36:51.114  INFO 2732 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1935 ms
+2017-10-27 13:36:51.326  INFO 2732 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-10-27 13:36:51.331  INFO 2732 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-10-27 13:36:51.332  INFO 2732 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-10-27 13:36:51.332  INFO 2732 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-10-27 13:36:51.333  INFO 2732 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-10-27 13:37:32.944 ERROR 2732 --- [main] com.example.demo.S3Config                : Unable to upload file, upload was aborted, reason: Unable to execute HTTP request: Connect to ezedin-devopsbuddy.s3-us-west-1.amazonaws.com:443 [ezedin-devopsbuddy.s3-us-west-1.amazonaws.com/52.219.24.24] failed: connect timed out
+2017-10-27 13:37:33.311  INFO 2732 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6fe7aac8: startup date [Fri Oct 27 13:36:49 CDT 2017]; root of context hierarchy
+2017-10-27 13:37:33.405  INFO 2732 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.example.demo.IndexController.getindex(com.example.demo.User)
+2017-10-27 13:37:33.407  INFO 2732 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/submit]}" onto public java.lang.String com.example.demo.IndexController.getSubmit(com.example.demo.User,org.springframework.web.multipart.MultipartFile,org.springframework.ui.Model)
+2017-10-27 13:37:33.413  INFO 2732 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-10-27 13:37:33.413  INFO 2732 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-10-27 13:37:33.516  INFO 2732 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-27 13:37:33.517  INFO 2732 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-27 13:37:33.580  INFO 2732 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-27 13:37:34.171  INFO 2732 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-10-27 13:37:34.275  INFO 2732 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-10-27 13:37:34.317  INFO 2732 --- [java-sdk-progress-listener-callback-thread] com.example.demo.S3ServicesImpl          : Uploaded bytes:0
+2017-10-27 13:37:34.317  INFO 2732 --- [java-sdk-progress-listener-callback-thread] com.example.demo.S3ServicesImpl          : Uploaded bytes:0
+2017-10-27 13:37:34.318  INFO 2732 --- [java-sdk-progress-listener-callback-thread] com.example.demo.S3ServicesImpl          : Uploaded bytes:0
+2017-10-27 13:37:34.322  INFO 2732 --- [java-sdk-progress-listener-callback-thread] com.example.demo.S3ServicesImpl          : Uploaded bytes:0
+2017-10-27 13:37:44.325  INFO 2732 --- [java-sdk-progress-listener-callback-thread] com.example.demo.S3ServicesImpl          : Uploaded bytes:0
+2017-10-27 13:37:44.357  INFO 2732 --- [java-sdk-progress-listener-callback-thread] com.example.demo.S3ServicesImpl          : Uploaded bytes:0
+2017-10-27 13:37:54.359  INFO 2732 --- [java-sdk-progress-listener-callback-thread] com.example.demo.S3ServicesImpl          : Uploaded bytes:0
+2017-10-27 13:37:54.493  INFO 2732 --- [java-sdk-progress-listener-callback-thread] com.example.demo.S3ServicesImpl          : Uploaded bytes:0
+2017-10-27 13:38:04.580  INFO 2732 --- [java-sdk-progress-listener-callback-thread] com.example.demo.S3ServicesImpl          : Uploaded bytes:0
+2017-10-27 13:38:04.774  INFO 2732 --- [java-sdk-progress-listener-callback-thread] com.example.demo.S3ServicesImpl          : Uploaded bytes:0
+2017-10-27 13:38:14.774  INFO 2732 --- [java-sdk-progress-listener-callback-thread] com.example.demo.S3ServicesImpl          : Uploaded bytes:0
+2017-10-27 13:38:14.775  INFO 2732 --- [java-sdk-progress-listener-callback-thread] com.example.demo.S3ServicesImpl          : Uploaded bytes:0
+2017-10-27 13:38:14.776  WARN 2732 --- [main] com.example.demo.S3ServicesImpl          : Amazon Client Ex:Unable to execute HTTP request: Connect to ezedin-devopsbuddy.s3-us-west-1.amazonaws.com:443 [ezedin-devopsbuddy.s3-us-west-1.amazonaws.com/54.231.236.24] failed: connect timed out
+2017-10-27 13:38:14.777  WARN 2732 --- [main] com.example.demo.S3ServicesImpl          : Amazon Client Ex:[Ljava.lang.StackTraceElement;@5d96bdf8
+2017-10-27 13:38:14.778  INFO 2732 --- [main] c.e.d.FileuploadExperimentApplication    : Started FileuploadExperimentApplication in 86.234 seconds (JVM running for 87.215)
+2017-10-27 15:14:06.337  INFO 2732 --- [RMI TCP Connection(127)-192.168.56.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2017-10-27 15:14:06.337  INFO 2732 --- [RMI TCP Connection(127)-192.168.56.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6fe7aac8: startup date [Fri Oct 27 13:36:49 CDT 2017]; root of context hierarchy
+2017-10-27 15:14:06.340  INFO 2732 --- [RMI TCP Connection(127)-192.168.56.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2017-10-27 15:14:15.227  INFO 8300 --- [main] c.e.d.FileuploadExperimentApplication    : Starting FileuploadExperimentApplication on USTX10300L01287 with PID 8300 (started by ew11300 in C:\Program Files (x86)\STS\STS3.7.3-Eclipse4.5.2-RTC6.0.2-WLP8.5-SecureAssist\STS3.7.3-Eclipse4.5.2-RTC6.0.2-WLP8.5-SecureAssist\advanced-spring\fileupload-experiment)
+2017-10-27 15:14:15.230 DEBUG 8300 --- [main] c.e.d.FileuploadExperimentApplication    : Running with Spring Boot v1.5.8.RELEASE, Spring v4.3.12.RELEASE
+2017-10-27 15:14:15.230  INFO 8300 --- [main] c.e.d.FileuploadExperimentApplication    : No active profile set, falling back to default profiles: default
+2017-10-27 15:14:15.548  INFO 8300 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6fe7aac8: startup date [Fri Oct 27 15:14:15 CDT 2017]; root of context hierarchy
+2017-10-27 15:14:17.382  INFO 8300 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-10-27 15:14:17.399  INFO 8300 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-10-27 15:14:17.401  INFO 8300 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2017-10-27 15:14:17.683  INFO 8300 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-10-27 15:14:17.684  INFO 8300 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2140 ms
+2017-10-27 15:14:17.889  INFO 8300 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-10-27 15:14:17.895  INFO 8300 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-10-27 15:14:17.896  INFO 8300 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-10-27 15:14:17.897  INFO 8300 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-10-27 15:14:17.897  INFO 8300 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-10-27 15:14:59.609 ERROR 8300 --- [main] com.example.demo.S3Config                : Unable to upload file, upload was aborted, reason: Unable to execute HTTP request: Connect to fileexperimentbucket.s3-us-west-1.amazonaws.com:443 [fileexperimentbucket.s3-us-west-1.amazonaws.com/52.219.28.8] failed: connect timed out
+2017-10-27 15:15:00.104  INFO 8300 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6fe7aac8: startup date [Fri Oct 27 15:14:15 CDT 2017]; root of context hierarchy
+2017-10-27 15:15:00.224  INFO 8300 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.example.demo.IndexController.getindex(com.example.demo.User)
+2017-10-27 15:15:00.227  INFO 8300 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/submit]}" onto public java.lang.String com.example.demo.IndexController.getSubmit(com.example.demo.User,org.springframework.web.multipart.MultipartFile,org.springframework.ui.Model)
+2017-10-27 15:15:00.232  INFO 8300 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-10-27 15:15:00.232  INFO 8300 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-10-27 15:15:00.292  INFO 8300 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-27 15:15:00.292  INFO 8300 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-27 15:15:00.350  INFO 8300 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-27 15:15:01.055  INFO 8300 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-10-27 15:15:01.178  INFO 8300 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-10-27 15:15:01.251  INFO 8300 --- [java-sdk-progress-listener-callback-thread] com.example.demo.S3ServicesImpl          : Uploaded bytes:0
+2017-10-27 15:15:01.252  INFO 8300 --- [java-sdk-progress-listener-callback-thread] com.example.demo.S3ServicesImpl          : Uploaded bytes:0
+2017-10-27 15:15:01.252  INFO 8300 --- [java-sdk-progress-listener-callback-thread] com.example.demo.S3ServicesImpl          : Uploaded bytes:0
+2017-10-27 15:15:01.252  INFO 8300 --- [java-sdk-progress-listener-callback-thread] com.example.demo.S3ServicesImpl          : Uploaded bytes:0
+2017-10-27 15:15:11.252  INFO 8300 --- [java-sdk-progress-listener-callback-thread] com.example.demo.S3ServicesImpl          : Uploaded bytes:0
+2017-10-27 15:15:11.272  INFO 8300 --- [java-sdk-progress-listener-callback-thread] com.example.demo.S3ServicesImpl          : Uploaded bytes:0
+2017-10-27 15:15:21.272  INFO 8300 --- [java-sdk-progress-listener-callback-thread] com.example.demo.S3ServicesImpl          : Uploaded bytes:0
+2017-10-27 15:15:21.293  INFO 8300 --- [java-sdk-progress-listener-callback-thread] com.example.demo.S3ServicesImpl          : Uploaded bytes:0
+2017-10-27 15:15:31.437  INFO 8300 --- [java-sdk-progress-listener-callback-thread] com.example.demo.S3ServicesImpl          : Uploaded bytes:0
+2017-10-27 15:15:31.549  INFO 8300 --- [java-sdk-progress-listener-callback-thread] com.example.demo.S3ServicesImpl          : Uploaded bytes:0
+2017-10-27 15:15:41.551  INFO 8300 --- [java-sdk-progress-listener-callback-thread] com.example.demo.S3ServicesImpl          : Uploaded bytes:0
+2017-10-27 15:15:41.551  INFO 8300 --- [java-sdk-progress-listener-callback-thread] com.example.demo.S3ServicesImpl          : Uploaded bytes:0
+2017-10-27 15:15:41.552  WARN 8300 --- [main] com.example.demo.S3ServicesImpl          : Amazon Client Ex:Unable to execute HTTP request: Connect to fileexperimentbucket.s3-us-west-1.amazonaws.com:443 [fileexperimentbucket.s3-us-west-1.amazonaws.com/54.231.237.36] failed: connect timed out
+2017-10-27 15:15:41.553  WARN 8300 --- [main] com.example.demo.S3ServicesImpl          : Amazon Client Ex:[Ljava.lang.StackTraceElement;@5d96bdf8
+2017-10-27 15:15:41.555  INFO 8300 --- [main] c.e.d.FileuploadExperimentApplication    : Started FileuploadExperimentApplication in 86.651 seconds (JVM running for 87.574)
+2017-10-27 15:24:12.971  INFO 8300 --- [RMI TCP Connection(19)-192.168.56.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2017-10-27 15:24:12.971  INFO 8300 --- [RMI TCP Connection(19)-192.168.56.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6fe7aac8: startup date [Fri Oct 27 15:14:15 CDT 2017]; root of context hierarchy
+2017-10-27 15:24:12.973  INFO 8300 --- [RMI TCP Connection(19)-192.168.56.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2017-10-27 15:24:31.361  INFO 8556 --- [main] c.e.d.FileuploadExperimentApplication    : Starting FileuploadExperimentApplication on USTX10300L01287 with PID 8556 (started by ew11300 in C:\Program Files (x86)\STS\STS3.7.3-Eclipse4.5.2-RTC6.0.2-WLP8.5-SecureAssist\STS3.7.3-Eclipse4.5.2-RTC6.0.2-WLP8.5-SecureAssist\advanced-spring\fileupload-experiment)
+2017-10-27 15:24:31.363 DEBUG 8556 --- [main] c.e.d.FileuploadExperimentApplication    : Running with Spring Boot v1.5.8.RELEASE, Spring v4.3.12.RELEASE
+2017-10-27 15:24:31.364  INFO 8556 --- [main] c.e.d.FileuploadExperimentApplication    : No active profile set, falling back to default profiles: default
+2017-10-27 15:24:31.665  INFO 8556 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6fe7aac8: startup date [Fri Oct 27 15:24:31 CDT 2017]; root of context hierarchy
+2017-10-27 15:24:33.138  INFO 8556 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-10-27 15:24:33.154  INFO 8556 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-10-27 15:24:33.155  INFO 8556 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2017-10-27 15:24:33.403  INFO 8556 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-10-27 15:24:33.404  INFO 8556 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1743 ms
+2017-10-27 15:24:33.584  INFO 8556 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-10-27 15:24:33.588  INFO 8556 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-10-27 15:24:33.589  INFO 8556 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-10-27 15:24:33.590  INFO 8556 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-10-27 15:24:33.590  INFO 8556 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-10-27 15:25:15.391 ERROR 8556 --- [main] com.example.demo.S3Config                : Unable to upload file, upload was aborted, reason: Unable to execute HTTP request: Connect to fileexperimentbucket.s3-us-west-1.amazonaws.com:443 [fileexperimentbucket.s3-us-west-1.amazonaws.com/54.231.236.36] failed: connect timed out
+2017-10-27 15:25:15.733  INFO 8556 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6fe7aac8: startup date [Fri Oct 27 15:24:31 CDT 2017]; root of context hierarchy
+2017-10-27 15:25:15.818  INFO 8556 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.example.demo.IndexController.getindex(com.example.demo.User)
+2017-10-27 15:25:15.820  INFO 8556 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/submit]}" onto public java.lang.String com.example.demo.IndexController.getSubmit(com.example.demo.User,org.springframework.web.multipart.MultipartFile,org.springframework.ui.Model)
+2017-10-27 15:25:15.823  INFO 8556 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-10-27 15:25:15.824  INFO 8556 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-10-27 15:25:15.874  INFO 8556 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-27 15:25:15.875  INFO 8556 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-27 15:25:15.930  INFO 8556 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-27 15:25:16.521  INFO 8556 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-10-27 15:25:16.625  INFO 8556 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-10-27 15:25:16.671  INFO 8556 --- [java-sdk-progress-listener-callback-thread] com.example.demo.S3ServicesImpl          : Uploaded bytes:0
+2017-10-27 15:25:16.671  INFO 8556 --- [java-sdk-progress-listener-callback-thread] com.example.demo.S3ServicesImpl          : Uploaded bytes:0
+2017-10-27 15:25:16.672  INFO 8556 --- [java-sdk-progress-listener-callback-thread] com.example.demo.S3ServicesImpl          : Uploaded bytes:0
+2017-10-27 15:25:16.677  INFO 8556 --- [java-sdk-progress-listener-callback-thread] com.example.demo.S3ServicesImpl          : Uploaded bytes:0
+2017-10-27 15:25:26.681  INFO 8556 --- [java-sdk-progress-listener-callback-thread] com.example.demo.S3ServicesImpl          : Uploaded bytes:0
+2017-10-27 15:25:26.774  INFO 8556 --- [java-sdk-progress-listener-callback-thread] com.example.demo.S3ServicesImpl          : Uploaded bytes:0
+2017-10-27 15:25:36.777  INFO 8556 --- [java-sdk-progress-listener-callback-thread] com.example.demo.S3ServicesImpl          : Uploaded bytes:0
+2017-10-27 15:25:36.816  INFO 8556 --- [java-sdk-progress-listener-callback-thread] com.example.demo.S3ServicesImpl          : Uploaded bytes:0
+2017-10-27 15:25:46.970  INFO 8556 --- [java-sdk-progress-listener-callback-thread] com.example.demo.S3ServicesImpl          : Uploaded bytes:0
+2017-10-27 15:25:47.304  INFO 8556 --- [java-sdk-progress-listener-callback-thread] com.example.demo.S3ServicesImpl          : Uploaded bytes:0
+2017-10-27 15:25:57.305  INFO 8556 --- [java-sdk-progress-listener-callback-thread] com.example.demo.S3ServicesImpl          : Uploaded bytes:0
+2017-10-27 15:25:57.322  INFO 8556 --- [java-sdk-progress-listener-callback-thread] com.example.demo.S3ServicesImpl          : Uploaded bytes:0
+2017-10-27 15:25:57.321  WARN 8556 --- [main] com.example.demo.S3ServicesImpl          : Amazon Client Ex:Unable to execute HTTP request: Connect to fileexperimentbucket.s3-us-west-1.amazonaws.com:443 [fileexperimentbucket.s3-us-west-1.amazonaws.com/52.219.20.56] failed: connect timed out
+2017-10-27 15:25:57.325  WARN 8556 --- [main] com.example.demo.S3ServicesImpl          : Amazon Client Ex:[Ljava.lang.StackTraceElement;@12fe1f28
+2017-10-27 15:25:57.339  INFO 8556 --- [main] c.e.d.FileuploadExperimentApplication    : Started FileuploadExperimentApplication in 86.361 seconds (JVM running for 87.42)
+2017-10-27 15:26:34.974  INFO 8556 --- [RMI TCP Connection(10)-192.168.56.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2017-10-27 15:26:34.974  INFO 8556 --- [RMI TCP Connection(10)-192.168.56.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6fe7aac8: startup date [Fri Oct 27 15:24:31 CDT 2017]; root of context hierarchy
+2017-10-27 15:26:34.977  INFO 8556 --- [RMI TCP Connection(10)-192.168.56.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2017-10-27 15:26:53.405  INFO 10808 --- [main] c.e.d.FileuploadExperimentApplication    : Starting FileuploadExperimentApplication on USTX10300L01287 with PID 10808 (started by ew11300 in C:\Program Files (x86)\STS\STS3.7.3-Eclipse4.5.2-RTC6.0.2-WLP8.5-SecureAssist\STS3.7.3-Eclipse4.5.2-RTC6.0.2-WLP8.5-SecureAssist\advanced-spring\fileupload-experiment)
+2017-10-27 15:26:53.409 DEBUG 10808 --- [main] c.e.d.FileuploadExperimentApplication    : Running with Spring Boot v1.5.8.RELEASE, Spring v4.3.12.RELEASE
+2017-10-27 15:26:53.410  INFO 10808 --- [main] c.e.d.FileuploadExperimentApplication    : No active profile set, falling back to default profiles: default
+2017-10-27 15:26:53.792  INFO 10808 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6fe7aac8: startup date [Fri Oct 27 15:26:53 CDT 2017]; root of context hierarchy
+2017-10-27 15:26:55.619  INFO 10808 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-10-27 15:26:55.636  INFO 10808 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-10-27 15:26:55.637  INFO 10808 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2017-10-27 15:26:55.952  INFO 10808 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-10-27 15:26:55.953  INFO 10808 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2164 ms
+2017-10-27 15:26:56.201  INFO 10808 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-10-27 15:26:56.207  INFO 10808 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-10-27 15:26:56.208  INFO 10808 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-10-27 15:26:56.208  INFO 10808 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-10-27 15:26:56.208  INFO 10808 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-10-27 15:27:37.902 ERROR 10808 --- [main] com.example.demo.S3Config                : Unable to upload file, upload was aborted, reason: Unable to execute HTTP request: Connect to fileexperimentbucket.s3-us-west-1.amazonaws.com:443 [fileexperimentbucket.s3-us-west-1.amazonaws.com/52.219.28.48] failed: connect timed out
+2017-10-27 15:27:38.212  INFO 10808 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6fe7aac8: startup date [Fri Oct 27 15:26:53 CDT 2017]; root of context hierarchy
+2017-10-27 15:27:38.281  INFO 10808 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/submit]}" onto public java.lang.String com.example.demo.IndexController.getSubmit(com.example.demo.User,org.springframework.web.multipart.MultipartFile,org.springframework.ui.Model)
+2017-10-27 15:27:38.282  INFO 10808 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.example.demo.IndexController.getindex(com.example.demo.User)
+2017-10-27 15:27:38.285  INFO 10808 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-10-27 15:27:38.286  INFO 10808 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-10-27 15:27:38.331  INFO 10808 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-27 15:27:38.331  INFO 10808 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-27 15:27:38.395  INFO 10808 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-27 15:27:39.062  INFO 10808 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-10-27 15:27:39.185  INFO 10808 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-10-27 15:27:39.239  INFO 10808 --- [java-sdk-progress-listener-callback-thread] com.example.demo.S3ServicesImpl          : Uploaded bytes:0
+2017-10-27 15:27:39.239  INFO 10808 --- [java-sdk-progress-listener-callback-thread] com.example.demo.S3ServicesImpl          : Uploaded bytes:0
+2017-10-27 15:27:39.239  INFO 10808 --- [java-sdk-progress-listener-callback-thread] com.example.demo.S3ServicesImpl          : Uploaded bytes:0
+2017-10-27 15:27:39.245  INFO 10808 --- [java-sdk-progress-listener-callback-thread] com.example.demo.S3ServicesImpl          : Uploaded bytes:0
+2017-10-27 15:27:49.248  INFO 10808 --- [java-sdk-progress-listener-callback-thread] com.example.demo.S3ServicesImpl          : Uploaded bytes:0
+2017-10-27 15:27:49.324  INFO 10808 --- [java-sdk-progress-listener-callback-thread] com.example.demo.S3ServicesImpl          : Uploaded bytes:0
+2017-10-27 15:27:59.325  INFO 10808 --- [java-sdk-progress-listener-callback-thread] com.example.demo.S3ServicesImpl          : Uploaded bytes:0
+2017-10-27 15:27:59.416  INFO 10808 --- [java-sdk-progress-listener-callback-thread] com.example.demo.S3ServicesImpl          : Uploaded bytes:0
+2017-10-27 15:28:09.550  INFO 10808 --- [java-sdk-progress-listener-callback-thread] com.example.demo.S3ServicesImpl          : Uploaded bytes:0
+2017-10-27 15:28:09.591  INFO 10808 --- [java-sdk-progress-listener-callback-thread] com.example.demo.S3ServicesImpl          : Uploaded bytes:0
+2017-10-27 15:28:19.594  INFO 10808 --- [java-sdk-progress-listener-callback-thread] com.example.demo.S3ServicesImpl          : Uploaded bytes:0
+2017-10-27 15:28:19.596  INFO 10808 --- [java-sdk-progress-listener-callback-thread] com.example.demo.S3ServicesImpl          : Uploaded bytes:0
+2017-10-27 15:28:19.608  WARN 10808 --- [main] com.example.demo.S3ServicesImpl          : Amazon Client Ex:Unable to execute HTTP request: Connect to fileexperimentbucket.s3-us-west-1.amazonaws.com:443 [fileexperimentbucket.s3-us-west-1.amazonaws.com/52.219.24.36] failed: connect timed out
+2017-10-27 15:28:19.609  WARN 10808 --- [main] com.example.demo.S3ServicesImpl          : Amazon Client Ex:[Ljava.lang.StackTraceElement;@22a10ac6
+2017-10-27 15:28:19.613  INFO 10808 --- [main] c.e.d.FileuploadExperimentApplication    : Started FileuploadExperimentApplication in 86.588 seconds (JVM running for 87.58)
+2017-10-27 15:28:32.327  INFO 10808 --- [RMI TCP Connection(9)-192.168.56.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2017-10-27 15:28:32.328  INFO 10808 --- [RMI TCP Connection(9)-192.168.56.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6fe7aac8: startup date [Fri Oct 27 15:26:53 CDT 2017]; root of context hierarchy
+2017-10-27 15:28:32.348  INFO 10808 --- [RMI TCP Connection(9)-192.168.56.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown

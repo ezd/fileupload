@@ -1,0 +1,16 @@
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+</head>
+<body>
+<form th:action="@{/submit}"  th:method="post" th:object="${user}" enctype="multipart/form-data">
+<label th:text="name"></label>
+<input type="text" th:field="*{name}"></input>
+<input type="file" id="file" name="file"/>
+<input type="submit"/><br/>
+<span th:text="${succssMsg}"></span><br/>
+<span th:text="${url}"></span><br/>
+<img alt="" src="http://www.jqueryscript.net/images/Simplest-Responsive-jQuery-Image-Lightbox-Plugin-simple-lightbox.jpg"/>
+
+</form>
+</body>
+</html>
